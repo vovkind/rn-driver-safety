@@ -23,3 +23,6 @@
 hs_err_pid*
 
 /node_modules
+/example/node_modules
+/example/android/app/build
+/example/android/.gradle
