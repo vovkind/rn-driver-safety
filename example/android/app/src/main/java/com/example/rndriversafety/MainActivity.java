@@ -1,4 +1,4 @@
-package com.example.reactnativedriversafety;
+package com.example.rndriversafety;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "DriverSafetyExample";
+    return "RnDriverSafetyExample";
   }
 }

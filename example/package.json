@@ -1,6 +1,6 @@
 {
-  "name": "react-native-driver-safety-example",
-  "description": "Example app for react-native-driver-safety",
+  "name": "rn-driver-safety-example",
+  "description": "Example app for rn-driver-safety",
   "version": "0.0.1",
   "private": true,
   "scripts": {

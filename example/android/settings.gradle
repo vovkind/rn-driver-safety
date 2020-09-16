@@ -1,6 +1,6 @@
-rootProject.name = 'DriverSafetyExample'
+rootProject.name = 'RnDriverSafetyExample'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 
-include ':reactnativedriversafety'
-project(':reactnativedriversafety').projectDir = new File(rootProject.projectDir, '../../android')
+include ':rndriversafety'
+project(':rndriversafety').projectDir = new File(rootProject.projectDir, '../../android')

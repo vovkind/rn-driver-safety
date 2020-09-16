@@ -20,8 +20,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'DriverSafetyExample' do
-  # Pods for DriverSafetyExample
+target 'RnDriverSafetyExample' do
+  # Pods for RnDriverSafetyExample
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -53,7 +53,7 @@ target 'DriverSafetyExample' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'react-native-driver-safety', :path => '../..'
+  pod 'rn-driver-safety', :path => '../..'
 
   use_native_modules!
 

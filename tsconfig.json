@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "react-native-driver-safety": ["./src/index"]
+      "rn-driver-safety": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

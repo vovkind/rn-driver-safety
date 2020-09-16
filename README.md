@@ -1,21 +1,21 @@
-# react-native-driver-safety
+# rn-driver-safety
 
 Driver behavior and scoring
 
 ## Installation
 
 ```sh
-npm install react-native-driver-safety
+npm install rn-driver-safety
 ```
 
 ## Usage
 
 ```js
-import DriverSafety from "react-native-driver-safety";
+import RnDriverSafety from "rn-driver-safety";
 
 // ...
 
-const result = await DriverSafety.multiply(3, 7);
+const result = await RnDriverSafety.multiply(3, 7);
 ```
 
 ## Contributing

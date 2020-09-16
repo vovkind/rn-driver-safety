@@ -1,9 +1,9 @@
 import { NativeModules } from 'react-native';
 
-type DriverSafetyType = {
+type RnDriverSafetyType = {
   multiply(a: number, b: number): Promise<number>;
 };
 
-const { DriverSafety } = NativeModules;
+const { RnDriverSafety } = NativeModules;
 
-export default DriverSafety as DriverSafetyType;
+export default RnDriverSafety as RnDriverSafetyType;
