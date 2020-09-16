@@ -34,13 +34,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/vovkind/react-native-driver-safety",
+  "repository": "https://github.com/vovkind/rn-driver-safety",
   "author": "Vladimir B <vladimir.buchgalter@dragontailsystems.com> (https://github.com/vovkind)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vovkind/react-native-driver-safety/issues"
+    "url": "https://github.com/vovkind/rn-driver-safety/issues"
   },
-  "homepage": "https://github.com/vovkind/react-native-driver-safety#readme",
+  "homepage": "https://github.com/vovkind/rn-driver-safety#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
