@@ -28,3 +28,4 @@ hs_err_pid*
 /example/android/.gradle
 /example/android/.idea
 ../*.iml
+/example/ios/Pods

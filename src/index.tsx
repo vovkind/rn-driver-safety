@@ -1,5 +1,9 @@
-export default {
-  multiply(a: number, b: number) {
-    return Promise.resolve(a * b);
-  },
+import { NativeModules } from 'react-native';
+
+type DriverSafetyType = {
+  multiply(a: number, b: number): Promise<number>;
 };
+
+const { DriverSafety } = NativeModules;
+
+export default DriverSafety as DriverSafetyType;

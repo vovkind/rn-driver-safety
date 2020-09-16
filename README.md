@@ -1,6 +1,6 @@
 # react-native-driver-safety
 
-Score courier by his driver habits
+Driver behavior and scoring
 
 ## Installation
 

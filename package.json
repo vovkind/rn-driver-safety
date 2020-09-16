@@ -1,7 +1,7 @@
 {
   "name": "react-native-driver-safety",
   "version": "0.1.0",
-  "description": "Score courier by his driver habits",
+  "description": "Driver behavior and scoring",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -34,13 +34,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/vovkind/rn-drver-safety",
+  "repository": "https://github.com/vovkind/react-native-driver-safety",
   "author": "Vladimir B <vladimir.buchgalter@dragontailsystems.com> (https://github.com/vovkind)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vovkind/rn-drver-safety/issues"
+    "url": "https://github.com/vovkind/react-native-driver-safety/issues"
   },
-  "homepage": "https://github.com/vovkind/rn-drver-safety#readme",
+  "homepage": "https://github.com/vovkind/react-native-driver-safety#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",
@@ -53,7 +53,6 @@
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
-    "husky": "^4.2.5",
     "jest": "^26.0.1",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
@@ -72,12 +71,6 @@
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
   },
   "commitlint": {
     "extends": [
@@ -119,10 +112,7 @@
       ]
     }
   },
-  "eslintIgnore": [
-    "node_modules/",
-    "lib/"
-  ],
+  "eslintIgnore": ["node_modules/", "lib/"],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -133,13 +123,6 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      "typescript"
-    ]
-  },
-  "dependencies": {
-    "@react-native-community/cli-platform-android": "^4.13.0"
+    "targets": ["commonjs", "module", "typescript"]
   }
 }
