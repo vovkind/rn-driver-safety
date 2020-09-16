@@ -34,7 +34,10 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/vovkind/rn-driver-safety",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vovkind/rn-driver-safety.git"
+  },
   "author": "Vladimir B <vladimir.buchgalter@dragontailsystems.com> (https://github.com/vovkind)",
   "license": "MIT",
   "bugs": {
