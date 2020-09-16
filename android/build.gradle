@@ -50,10 +50,23 @@ android {
   }
 }
 
+Properties properties = new Properties()
+if (project.rootProject.file('local.properties').canRead()) {
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+}
+
 repositories {
   mavenCentral()
   jcenter()
   google()
+
+  maven {
+    url "s3://android.telematics.sdk.production.s3.us-east-2.amazonaws.com"
+    credentials(AwsCredentials) {
+        accessKey properties.getProperty('ACCESS_KEY')
+        secretKey properties.getProperty('SECRET_KEY')
+    }
+  }
 
   def found = false
   def defaultDir = null
@@ -127,4 +140,5 @@ dependencies {
   // noinspection GradleDynamicVersion
   api 'com.facebook.react:react-native:+'
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  implementation "com.telematicssdk:tracking:2.0.58"
 }
