@@ -26,11 +26,24 @@ class RnDriverSafetyModule(reactContext: ReactApplicationContext) : ReactContext
     @ReactMethod
     fun multiply(a: Int, b: Int, promise: Promise) {
         promise.resolve(a * b)
-        enableSDK()
     }
 
-    fun enableSDK() {
-      TrackingApi.getInstance().setDeviceID("da630ebf-8765-4014-a43a-a93889749554")
+    @ReactMethod
+    fun enable(deviceId: String) {
+        enableSDK(deviceId)
+    }
+
+    @ReactMethod
+    fun disable() {
+        disableSDK()
+    }
+
+    fun enableSDK(deviceId: String) {
+      TrackingApi.getInstance().setDeviceID(deviceId)
       TrackingApi.getInstance().setEnableSdk(true)
+    }
+
+    fun disableSDK() {
+      TrackingApi.getInstance().setEnableSdk(false)
     }
 }
