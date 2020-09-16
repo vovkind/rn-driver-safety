@@ -1,5 +1,5 @@
 {
-  "name": "react-native-driver-safety",
+  "name": "rn-driver-safety",
   "version": "0.1.0",
   "description": "Driver behavior and scoring",
   "main": "lib/commonjs/index",
