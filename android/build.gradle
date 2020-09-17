@@ -61,7 +61,7 @@ repositories {
   google()
 
   maven {
-    url "s3://android.telematics.sdk.production.s3.us-east-2.amazonaws.com"
+    url "s3://android.telematics.sdk.production/"
     credentials(AwsCredentials) {
         accessKey properties.getProperty('ACCESS_KEY')
         secretKey properties.getProperty('SECRET_KEY')
