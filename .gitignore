@@ -210,5 +210,3 @@ android/.idea/
 android/gradle*
 example/
 node_modules/
-*.hprof
-ios/Pods/
