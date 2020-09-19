@@ -61,11 +61,7 @@ repositories {
   google()
 
   maven {
-    url "s3://android.telematics.sdk.production/"
-    credentials(AwsCredentials) {
-        accessKey properties.getProperty('ACCESS_KEY')
-        secretKey properties.getProperty('SECRET_KEY')
-    }
+    url "https://s3.us-east-2.amazonaws.com/android.telematics.sdk.production/"
   }
 
   def found = false
